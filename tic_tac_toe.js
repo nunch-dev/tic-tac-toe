@@ -81,7 +81,8 @@ function onCellClick(i, j, $el) {
 
 // 현재 유저를 확인하는 함수
 function currentPlayer() {
-  return turn ? 'O' : 'X';
+  if (turn) return 'O';
+  else return 'X';
 }
 
 // 승리 조건을 확인하는 함수
