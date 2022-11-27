@@ -45,7 +45,7 @@ function makeCells() {
   for (let i = 0; i < boardNum; i++) {
     let col = [];
     for (let j = 0; j < boardNum; j++) {
-      const cell = document.createElement('div')
+      const cell = document.createElement('button')
 
       cell.onclick = function () {
         return onCellClick(i, j, cell);
